@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Academy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong {
+        color: crimson;
+    }
+
+
+
+
+
+
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../blogs/corona.html">Corona Virus ⏩</a></li>
+                            <li><a class="dropdown-item" href="../blogs/ram.html">RAM ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                        </ul>
+
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./blogs/corona.html">Hindi</a></li>
+                            <li>
+                              <a class="dropdown-item" href="./blogs/ram.html">English</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../science.html">Science</a></li>
+                            <li><a class="dropdown-item" href="../commerce1.html">Commerce</a></li>
+                            <li><a class="dropdown-item" href="https://techdaytodays.blogspot.com/">Technology</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./civilservices.html">UPSC Updates</a></li>
+                            <li><a class="dropdown-item" href="./examupdate.html">Exam Updates</a></li>
+                            <li><a class="dropdown-item" href="./dailynews.html">Free Courses</a></li>
+                            <li><a class="dropdown-item" href="./studentRoadMap.html">Student RoadMap</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://mybestindia22.blogspot.com/?view=magazine">Blogs
+                                    On India</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../CBSE/stateBoard.html">State-Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="./examupdate.html">CBSE</a>
+                    </li>
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Ram Carousel  -->
+
+    <div id="Ram">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="../images/CBSE/cbse-1.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-2.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-3.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-4.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-5.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-6.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-7.jpg" alt="No Img"></div>
+            <div class="item"><img src="../images/CBSE/cbse-8.jpg" alt="No Img"></div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <!--CBSE UPDATES-->
+
+    <h1 style="text-align: center;">CBSE Class 10, 12 Board Exam 2021 results date, time: BIG updates students must know
+    </h1>
+
+    <div class="main_holder">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12 col-sm-12 col-md-12 mx-auto">
+                    <p style="text-align: justify; text-transform: capitalize;"><strong>CBSE board examination
+                            update:</strong><br>
+                        It may be recalled that earlier the CBSE had said that it will announce the CBSE Class 10 Board
+                        Exam 2021 result by July 20.
+                        <br><br>
+                        As lakhs of CBSE Class 10, 12 students are awaiting for the declaration of CBSE Class 10, 12
+                        Board Exam 2021 results, speculations are rife that the CBSE would make an announcement
+                        regarding Class 10, 12 results date and time on Monday (July 26).
+                        <br><br>
+                        For its part, CBSE has repeatedly instructed the Class 10, 12 students to monitor its official
+                        website cbse.nic.in for any information regarding the declaration of CBSE Class 10, 12 Board
+                        Exam 2021 results. The Board has also advised the students, teachers and parents not to fall
+                        prey to fake news and do not trust in any news which is not posted on cbse.nic.in.
+                        <br><br>
+
+                        It may be recalled that earlier the CBSE had said that it will announce the CBSE Class 10 Board
+                        Exam 2021 result by July 20 but the Board failed to release the result on time as it directed
+                        some schools to revise the marks of some Class 10 students after submission.
+                        <br><br>
+
+                        Earlier this week, a CBSE official said that results are delayed this year. “These are
+                        extraordinary circumstances as such. The process is elaborate and new for all including
+                        schools”, NDTV quoted the official as saying.
+
+                        Notably, the CBSE Class 10, 12 Board Exams were cancelled due to COVID-19 pandemic and CBSE
+                        Class 10 students will be evaluated on the basis of marks obtained in different tests/exams held
+                        during the academic year at the school level. Of the total 100 marks, the students will get 20
+                        marks for internal assessments and 80 marks for their performance in various exams conducted by
+                        the school throughout the academic session.
+
+                        <br><br>
+                        It is to be noted that the CBSE is yet to make any official announcement regarding the
+                        declaration of CBSE Class 10, 12 Board Exam 2021 results but it is expected that the CBSE will
+                        release the result soon. According to reports, the CBSE is gearingup to release CBSE Class 10,
+                        12 Board Exam 2021 result by July 31, 2021 on its official website cbseresults.nic.in.
+
+                        Students can also check CBSE Class 10, 12 Board Exam 2021 results through alternative methods:
+                        DigiLocker, IVRS, SMS and UMANG app.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Academy 2021 | All Right Reserved !</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+
+    <!-- Scroll Css -->
+    <script>
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
