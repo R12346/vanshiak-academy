@@ -122,6 +122,7 @@ footer p{
     padding: 10px;
     transition: all 0.4s ease;
     border-radius: 0%;
+    width: 200px;
 }
 
 .MyBtn_Here:hover{

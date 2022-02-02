@@ -182,6 +182,159 @@
         background: linear-gradient(to top, #008aff, #00ffe7);
         filter: blur(30px);
     }
+
+    #nj {
+        display: flex;
+        justify-content: center;
+        border: 10px solid blue;
+        align-items: center;
+        flex-direction: row;
+        width: 250px;
+        height: 270px;
+        font-size: large;
+        margin: 2% 2% 3% 40px;
+    }
+
+    .npav {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+    .text {
+        padding: 40px;
+        background: #eee;
+    }
+
+    .text h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .banner-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .banner {
+        background: linear-gradient(-55deg, #000 29%, #1864ab 29.1%, #37d4cd 68%, #000 68.1%);
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* box-shadow: 0 5px 10px #0005; */
+        overflow: hidden;
+        box-shadow: 3px 3px 5px 5px darkblue;
+        border-radius: 5px;
+        animation: rt 2s infinite;
+    }
+
+    @keyframes rt {
+        10% {
+            box-shadow: 3px 3px 5px 5px rgb(5, 237, 245);
+        }
+
+        15% {
+            box-shadow: 3px 3px 5px 5px #f03e3e;
+        }
+    }
+
+    .banner-container .banner .shoe {
+        flex: 1 1 250px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .banner-container .banner .shoe img {
+        width: 80%;
+    }
+
+    .banner-container .banner .content {
+        flex: 1 1 250px;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        width: 300px;
+        /* height: 60px; */
+    }
+
+    .banner-container .banner .content span {
+     
+      
+        color: #eee;
+        font-size: 25px;
+        /* padding: -40%; */
+    }
+
+    .banner-container .banner .content h3 {
+        color: #fff;
+        font-size: 40px;
+        animation: tr 2s infinite;
+    }
+
+    @keyframes tr {
+        10% {
+            color: darkblue;
+        }
+
+        15% {
+            color: #37d4cd;
+        }
+    }
+
+    .banner-container .banner .content p {
+        display: flex;
+        justify-content: center;
+        color: #eee;
+        font-size: 20px;
+        padding: 10px 0;
+        animation: tr 2s infinite;
+    }
+
+    @keyframes tr {
+        10% {
+            color: darkblue;
+        }
+
+        15% {
+            color: #37d4cd;
+        }
+    }
+
+    .banner-container .banner .content .btn {
+        display: block;
+        height: 40px;
+        width: 150px;
+        line-height: 40px;
+        background: #fff;
+        color: #d63031;
+        margin: 5px auto;
+        text-decoration: none;
+    }
+
+    .banner-container .banner .women {
+        position: relative;
+        bottom: -33px;
+        padding: 10px;
+        flex: 1 1 250px;
+    }
+
+    .banner-container .banner .women img {
+        width: 100%;
+    }
+
+    @media (max-width:768px) {
+        .banner-container .banner .women {
+            display: none;
+        }
+    }
 </style>
 
 <body>
@@ -234,7 +387,7 @@
 
 
                     </li> -->
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -244,7 +397,7 @@
                             <li><a class="dropdown-item" href="../hindi.html">Hindi</a></li>
                             <li><a class="dropdown-item" href="../english/autobiography.html">English</a>
                             <li>
-                    
+
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="../science.html">Science</a></li>
@@ -252,24 +405,24 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                        </li> 
-                        <li>
-                          <a class="dropdown-item" href="../Updates/dailynews.html">Free Courses</a>
-                        </li>           
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Updates/dailynews.html">Free Courses</a>
+                    </li>
 
 
-                         
-                            <!-- <li><a class="dropdown-item" href="../Updates/civilservices.html">UPSC Updates</a></li>
+
+                    <!-- <li><a class="dropdown-item" href="../Updates/civilservices.html">UPSC Updates</a></li>
                             <li><a class="dropdown-item" href="../Updates/examupdate.html">Exam Updates</a></li>
                             <li><a class="dropdown-item" href="../Updates/dailynews.html">Daily News</a></li>
                             <li><a class="dropdown-item" href="../Updates/studentRoadMap.html">Student RoadMap</a></li> -->
-                            <!-- <li>
+                    <!-- <li>
                                 <hr class="dropdown-divider">
                             </li> -->
-                            <!-- <li><a class="dropdown-item" href="https://mybestindia22.blogspot.com/?view=magazine">Blogs
+                    <!-- <li><a class="dropdown-item" href="https://mybestindia22.blogspot.com/?view=magazine">Blogs
                                     On India</a></li> -->
-                        </ul>
-                    </li>
+                </ul>
+                </li>
 
                 </ul>
 
@@ -375,6 +528,16 @@
                                 Ultimately, Musk ended up founding SpaceX with the long-term goal of creating a "true
                                 spacefaring civilization".</p>
                         </li>
+                        <div class="npav">
+                            <script type="text/javascript" language="javascript">
+                                var aax_size = '728x90';
+                                var aax_pubname = 'pankajnandwan-21';
+                                var aax_src = '302';
+                            </script>
+                            <script type="text/javascript" language="javascript"
+                                src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+                        </div>
+
 
                         <li>
                             <strong>SolarCity (2006)</strong><br>
@@ -402,6 +565,11 @@
                                 involvement. Musk led the Series A round of investment in February 2004, joining Tesla's
                                 board of directors as its chairman. Musk took an active role within the company and
                                 oversaw Roadster product design at a detailed level, but was not deeply involved in
+
+
+
+
+
                                 day-to-day business operations. Following the financial crisis in 2008,Musk assumed
                                 leadership of the company as CEO and product architect, positions he still holds today.
                                 Tesla Motors first built an electric sports car, the Tesla Roadster in 2008, with sales
@@ -414,7 +582,29 @@
                                 in Tesla.</p>
                         </li>
 
+<!-- ads -->
+<div class="banner-container">
 
+    <div class="banner">
+        <div class="shoe">
+            <img src="..//1234.webp" alt="">
+        </div>
+        <div class="content">
+            <span>Elon Musk</span>
+            <h3>FREE delivery: Sunday, Jan 30 Details</h3>
+            <p>Elon Musk A Biography</p>
+            <div class="myBtnHolder">
+                <a href="https://www.amazon.in/Elon-Musk-Biography-Entrepreneur-Billionaire/dp/1761037056?crid=3C997NRF2GRZ6&keywords=elon+musk&qid=1643077554&sprefix=elo%2Caps%2C289&sr=8-1-spons&psc=1&smid=A15DBATYR506U3&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExNElLQ1I5T1dMNERGJmVuY3J5cHRlZElkPUEwMjcxMzkxMVA4WTZHOTNBUUpOMiZlbmNyeXB0ZWRBZElkPUEwMjg0MDUzM003VEc3U1FNSUlTNiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=ll1&tag=pankajnandwan-21&linkId=5b7253d7abc3d7e834d677d90fbad560&language=en_IN&ref_=as_li_ss_tl"
+                    class="MyBtn_Here" target="_Abhishek">Best Offer</a>
+            </div>
+            <!-- <a href="#" class="btn">veiw offer</a> -->
+        </div>
+        <div class="women">
+            <img src="..//women.png" alt="">
+        </div>
+    </div>
+
+</div>
                         <li>
                             <strong>Hyperloop (2013)</strong><br>
                             <p>On August 12, 2013, Musk unveiled a concept for a high-speed transportation system
@@ -447,7 +637,7 @@
                                 Department of Homeland Security, as well as the mayors of New York, Philadelphia,
                                 Baltimore, and Washington D.C. stated that they are unaware of any such agreement.</p>
                         </li>
-
+                        
 
                         <li>
                             <strong>OpenAI (2015) </strong><br />
