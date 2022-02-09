@@ -122,7 +122,6 @@ footer p{
     padding: 10px;
     transition: all 0.4s ease;
     border-radius: 0%;
-    width: 200px;
 }
 
 .MyBtn_Here:hover{
@@ -245,7 +244,7 @@ footer p{
 
     .My_list li{
         font-size: 0.8rem;
-    }                                                            
+    }
     .udemy p,.Physics_content p{
         font-size: 0.7rem;
         margin-top: 20px;
