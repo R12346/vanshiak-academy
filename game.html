@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong {
+        color: crimson;
+    }
+
+
+    .SandeepMaheswariContentHoldrer .row .TwoVideoHolder {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0px;
+        /* width: 500px;
+        height: 600px; */
+    }
+
+    @media only screen and (min-width:1200px) {
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 500px;
+            height: 400px;
+        }
+    }
+
+    @media only screen and (min-width:1000px) {
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    @media only screen and (max-width:785px) {
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+
+
+    @media only screen and (max-width:576px) {
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder {
+            flex-direction: column;
+        }
+
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 600px;
+            height: 700px;
+        }
+    }
+
+
+
+    @media only screen and (max-width:315px) {
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+
+    .gta {
+        display: flex;
+        justify-content: center;
+        /* width: 900vh;
+        height: 1200px; */
+        padding: 10px;
+        margin: 05 5% 8%;
+    }
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="#">Hindi Blogs</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./hindi.html">Hindi</a></li>
+                            <li>
+                                <a class="dropdown-item" href="./english/poem.html">English</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="../science.html">Science</a></li>
+                            <!-- <li><a class="dropdown-item" href="../commerce1.html">Commerce</a></li> -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../science.html">E-book</a></li>
+                            <li><a class="dropdown-item" href="../science.html">Game Reviw</a></li>
+                            <!-- <li><a class="dropdown-item" href="../commerce1.html">Commerce</a></li> -->
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li> -->
+                            <!-- <li><a class="dropdown-item" href="../Updates/civilservices.html">UPSC Updates</a></li>
+                            <li><a class="dropdown-item" href="../Updates/examupdate.html">Exam Updates</a></li>
+                            <li><a class="dropdown-item" href="../Updates/dailynews.html">Daily News</a></li>
+                            <li><a class="dropdown-item" href="../Updates/studentRoadMap.html">Student RoadMap</a></li> -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Blogs
+                                    On India</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Essay
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../essay holder/jobless.html">Jobless</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/atkbd.html">Criminals</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/game.html">Game Reviw</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/newInvention.html">Scientific
+                                    Invention</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="./Sandipmaheswari.html">Sandeep Maheswari</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../hindi.html">Ryhme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../jibanParichya.html">Jivan Parichya</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../essay.html">Essay</a>
+                    </li>
+
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="jobcarousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img
+                    src="https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="No_Img"></div>
+            <div class="item"><img
+                    src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="No_Img"></div>
+            <div class="item"><img
+                    src="https://images.pexels.com/photos/695266/pexels-photo-695266.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="No_Img"></div>
+            <div class="item"><img
+                    src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="No_Img"></div>
+            <div class="item"><img
+                    src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="No_Img"></div>
+            <div class="item"><img
+                    src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="No_Img"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Sandeep Maheswari Videos List -->
+
+    <section class="SandeepMaheswariContentHoldrer">
+        <div class="container">
+            <h1 style="text-align: center;">Game Reviw</h1>
+
+            <div class="row">
+                <!-- 1 -->
+                <div class="col col-sm-12 col-lg-12 col-md-12 TwoVideoHolder">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QOHqTSB4tOQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- 2 -->
+                    <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/TtpclluCHzk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <!-- 3 -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wllBlpW4UhU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- 4 -->
+                <div class="col col-sm-12 col-lg-12 col-md-12 TwoVideoHolder">
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/Q921yjD9Xt8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- 5 -->
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/TzSgiFI6LkY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- 6 -->
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/Q9kad499k4s"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <!-- 31 -->
+                <div class="col col-sm-12 col-lg-12 col-md-12 TwoVideoHolder">
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/ZtHCnXMjIXY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- 32 -->
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/RizBIpB_xWI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- 33 -->
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/WfS5E4PzsvQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <!-- 34 -->
+                <div class="col col-sm-12 col-lg-12 col-md-12 TwoVideoHolder">
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/tehEO4ZCsbY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <!-- 35 -->
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/Cavei4HfHCI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- 36 -->
+                    <iframe class="gta" width="560" height="315" src="https://www.youtube.com/embed/LZeWRY_BBIE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Academy 2021 | All Right Reserved !</p>
+    </footer>
+
+
+
+
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
