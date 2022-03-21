@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong {
+        color: crimson;
+    }
+
+
+    .SandeepMaheswariContentHoldrer .row .TwoVideoHolder {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    @media only screen and (min-width:1200px) {
+        
+        .n112{
+            margin: 50px 50px 50px 50px;
+        }
+
+
+        
+    }
+    @media only screen and (min-width:991px){
+    .r5{
+        width: 950px;
+        max-height: 600px;
+    }
+    
+        
+    }
+
+    @media only screen and (min-width:1000px) {
+       
+        .n112{
+            margin: 50px 50px 50px 50px;
+        }
+        
+    }
+
+    @media only screen and (max-width:785px) {
+        /* .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 200px;
+            height: 200px;
+        } */
+    }
+
+
+
+    @media only screen and (max-width:576px) {
+        .SandeepMaheswariContentHoldrer .row .TwoVideoHolder {
+            flex-direction: column;
+        }
+
+        /* .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 300px;
+            height: 300px;
+        } */
+    }
+
+
+
+    @media only screen and (max-width:315px) {
+        /* .SandeepMaheswariContentHoldrer .row .TwoVideoHolder iframe {
+            width: 200px;
+            height: 200px; */
+        
+    }
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+    .r5{
+        display: flex;
+        justify-content: center;
+        margin:-550PX -50PX 210PX 260PX;
+        padding: 60px 180px 50px ; 
+        width: 950px;
+        max-height: 600px;
+    }
+    #r129{
+        box-shadow: 10px  red;
+        /* animation: ram 2s infinite; */
+    }
+    /* @keyframes ram{
+        10%{
+            box-shadow: 8px 8px 8px 8px green ;
+        }
+        20%{
+            box-shadow: 8px 8px 8px 8px rgb(2, 255, 255) ;
+        }
+        30%{
+            box-shadow: 8px 8px 8px 8px rgb(218, 218, 218) ;
+        }
+        40%{
+            box-shadow: 8px 8px 8px 8px green ;
+        }
+    } */
+    #n112{
+        display: flex;
+        justify-content: center;
+        margin: -290px 50px 400px 465px;
+        width: 300px;
+      
+    
+    }
+    .ny{
+        max-width: 500px;
+        max-height: 350px;
+    }
+    .pen{
+       margin: -200px 0px;
+    }
+    .bt{
+        display: flex;
+        justify-content: center;
+        border-radius: 10px 10px 10px 10px;
+        
+    }
+    .clo{
+       color: red;
+    }
+    
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="#">Hindi Blogs</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./hindi.html">Hindi</a></li>
+
+                            <li>
+                                <a class="dropdown-item" href="./english/poem.html">English</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./game.html">GameReviw</a>
+                            </li>
+
+
+                            <hr class="dropdown-divider">
+                    </li>
+
+                    <li><a class="dropdown-item" href="./ebook.html">Ebook</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="../Updates/civilservices.html">UPSC Updates</a></li>
+                            <li><a class="dropdown-item" href="../Updates/examupdate.html">Exam Updates</a></li>
+                            <li><a class="dropdown-item" href="../Updates/dailynews.html">Daily News</a></li> -->
+                    <li><a class="dropdown-item" href="./Updates/dailynews.html">Free Coures</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./blogs/corona.html">Blogs
+                            On India</a></li>
+                </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Essay
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../essay holder/jobless.html">Jobless</a></li>
+                        <li><a class="dropdown-item" href="../essay holder/atkbd.html">Criminals</a></li>
+                        <li><a class="dropdown-item" href="../essay holder/game.html">Game</a></li>
+                        <li><a class="dropdown-item" href="../essay holder/newInvention.html">Scientific
+                                Invention</a></li>
+                    </ul>
+                </li>
+
+                <!-- <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="./Sandipmaheswari.html">Sandeep Maheswari</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="../hindi.html">Ryhme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #fff;" href="../jibanParichya.html">Jivan Parichya</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" style="color: #fff;" href="../essay.html">Essay</a>
+                </li>
+
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="jobcarousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="No_Img"></div>
+            <div class="item"><img src="https://images.pexels.com/photos/34592/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="No_Img"></div>
+            <div class="item"><img src="https://images.pexels.com/photos/247899/pexels-photo-247899.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="No_Img"></div>
+            <div class="item"><img src="https://images.pexels.com/photos/256472/pexels-photo-256472.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="No_Img"></div>
+            <div class="item"><img src="https://media.istockphoto.com/vectors/group-of-hands-holding-books-reading-banner-vector-id820116664?k=20&m=820116664&s=612x612&w=0&h=vOhNtWcGTfqBNNEB8LF-Ttrc0fVve6tRLEtMTaFMPMs=" alt="No_Img"></div>
+        </div>
+    </div>
+ <br><br>
+
+<section class="container">
+    <h1>
+         Digital Marketing All - In - One <br>
+         For Dummies Paperback – 1 December 2020
+         by Stephanie Diamond  (Author)
+    </h1>
+    <div>
+        <img id="r129" src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/03/51B1nEGH94L.jpg" alt="" srcset="">
+  
+        <p class="r5">
+            Written By: Ryan Deiss and Russ Henneberry
+            Release Date: Dec 27, 2016
+            Pages: 328
+            Price: $20.18
+            
+            Many wish to have a magic book with ‘for dummies’ suffixed in its title to have an easy guide on the subject that interests them. Luckily for people with interest in digital marketing, there is already a bestseller book for you in this department.
+            
+            Digital Marketing for Dummies
+            <br>
+            
+            is a bare-boned approach of teaching digital marketing for readers, offering explanations to some of its most basic concepts in the simplest way possible before ultimately heading into the more advanced subject matter.
+            
+            What is astonishing about 
+            <br>
+            this book is despite its raw approach to the topic, how relevant the book remains in the year 2022. It talks about everything from the current best SEO practices to effectively using content marketing to gain traction. This book covers every inch of the digital marketing universe in the most comprehensive way possible.
+            <br>
+            The book aims to teach novice marketers how to come up with a digital marketing plan that works for their business. It is well thought out, and most importantly very easy to read. This book is definitely worth a check.
+            <br>
+
+            Suggested Readers
+            
+            Everyone, Small and Business Owners, Digital Marketing Enthusiasts
+        </p>
+        <BR></BR>
+        <a id="n112"  href="https://www.udemy.com/course/chemistry-inquiry-1of4/" class="MyBtn_Here" target="_Abhishek">Buy
+            Now</a>
+    </div>
+
+<div class="pen">
+    <h1>
+        Digital Marketing All - In - One <br>
+        For Dummies Paperback – 1 December 2020
+        by Stephanie Diamond  (Author)
+   </h1>
+   <div>
+       <img id="r129" src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/03/51B1nEGH94L.jpg" alt="" srcset="">
+ 
+       <p class="r5">
+           Written By: Ryan Deiss and Russ Henneberry
+           Release Date: Dec 27, 2016
+           Pages: 328
+           Price: $20.18
+           
+           Many wish to have a magic book with ‘for dummies’ suffixed in its title to have an easy guide on the subject that interests them. Luckily for people with interest in digital marketing, there is already a bestseller book for you in this department.
+           
+           Digital Marketing for Dummies
+           <br>
+           
+           is a bare-boned approach of teaching digital marketing for readers, offering explanations to some of its most basic concepts in the simplest way possible before ultimately heading into the more advanced subject matter.
+           
+           What is astonishing about 
+           <br>
+           this book is despite its raw approach to the topic, how relevant the book remains in the year 2022. It talks about everything from the current best SEO practices to effectively using content marketing to gain traction. This book covers every inch of the digital marketing universe in the most comprehensive way possible.
+           <br>
+           The book aims to teach novice marketers how to come up with a digital marketing plan that works for their business. It is well thought out, and most importantly very easy to read. This book is definitely worth a check.
+           <br>
+
+           Suggested Readers
+           
+           Everyone, Small and Business Owners, Digital Marketing Enthusiasts
+       </p>
+       <BR></BR>
+       <a id="n112"  href="https://www.udemy.com/course/chemistry-inquiry-1of4/" class="MyBtn_Here" target="_Abhishek">Buy
+           Now</a>
+   </div>
+</div>
+   
+
+
+
+
+
+
+
+   <DIV class="pen">
+    <h1>
+        Digital Marketing All - In - One <br>
+        For Dummies Paperback – 1 December 2020
+        by Stephanie Diamond  (Author)
+   </h1>
+   <div>
+       <img id="r129" src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/03/51B1nEGH94L.jpg" alt="" srcset="">
+ 
+       <p class="r5">
+           Written By: Ryan Deiss and Russ Henneberry
+           Release Date: Dec 27, 2016
+           Pages: 328
+           Price: $20.18
+           
+           Many wish to have a magic book with ‘for dummies’ suffixed in its title to have an easy guide on the subject that interests them. Luckily for people with interest in digital marketing, there is already a bestseller book for you in this department.
+           
+           Digital Marketing for Dummies
+           <br>
+           
+           is a bare-boned approach of teaching digital marketing for readers, offering explanations to some of its most basic concepts in the simplest way possible before ultimately heading into the more advanced subject matter.
+           
+           What is astonishing about 
+           <br>
+           this book is despite its raw approach to the topic, how relevant the book remains in the year 2022. It talks about everything from the current best SEO practices to effectively using content marketing to gain traction. This book covers every inch of the digital marketing universe in the most comprehensive way possible.
+           <br>
+           The book aims to teach novice marketers how to come up with a digital marketing plan that works for their business. It is well thought out, and most importantly very easy to read. This book is definitely worth a check.
+           <br>
+
+           Suggested Readers
+           
+           Everyone, Small and Business Owners, Digital Marketing Enthusiasts
+       </p>
+       <BR></BR>
+       <a id="n112"  href="https://www.udemy.com/course/chemistry-inquiry-1of4/" class="MyBtn_Here" target="_Abhishek">Buy
+           Now</a>
+   </div>
+   </DIV>
+
+
+   <div class="pen">
+    <h1>
+        Digital Marketing All - In - One <br>
+        For Dummies Paperback – 1 December 2020
+        by Stephanie Diamond  (Author)
+   </h1>
+   <div>
+       <img id="r129" src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/03/51B1nEGH94L.jpg" alt="" srcset="">
+ 
+       <p class="r5">
+           Written By: Ryan Deiss and Russ Henneberry
+           Release Date: Dec 27, 2016
+           Pages: 328
+           Price: $20.18
+           
+           Many wish to have a magic book with ‘for dummies’ suffixed in its title to have an easy guide on the subject that interests them. Luckily for people with interest in digital marketing, there is already a bestseller book for you in this department.
+           
+           Digital Marketing for Dummies
+           <br>
+           
+           is a bare-boned approach of teaching digital marketing for readers, offering explanations to some of its most basic concepts in the simplest way possible before ultimately heading into the more advanced subject matter.
+           
+           What is astonishing about 
+           <br>
+           this book is despite its raw approach to the topic, how relevant the book remains in the year 2022. It talks about everything from the current best SEO practices to effectively using content marketing to gain traction. This book covers every inch of the digital marketing universe in the most comprehensive way possible.
+           <br>
+           The book aims to teach novice marketers how to come up with a digital marketing plan that works for their business. It is well thought out, and most importantly very easy to read. This book is definitely worth a check.
+           <br>
+
+           Suggested Readers
+           
+           Everyone, Small and Business Owners, Digital Marketing Enthusiasts
+       </p>
+       <BR></BR>
+       <a id="n112"  href="https://www.udemy.com/course/chemistry-inquiry-1of4/" class="MyBtn_Here" target="_Abhishek">Buy
+           Now</a>
+   </div>
+   </div>
+
+
+   <div>
+    <h1>
+        Digital Marketing All - In - One <br>
+        For Dummies Paperback – 1 December 2020
+        by Stephanie Diamond  (Author)
+   </h1>
+   <div>
+       <img id="r129" src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/03/51B1nEGH94L.jpg" alt="" srcset="">
+ 
+       <p class="r5">
+           Written By: Ryan Deiss and Russ Henneberry
+           Release Date: Dec 27, 2016
+           Pages: 328
+           Price: $20.18
+           
+           Many wish to have a magic book with ‘for dummies’ suffixed in its title to have an easy guide on the subject that interests them. Luckily for people with interest in digital marketing, there is already a bestseller book for you in this department.
+           
+           Digital Marketing for Dummies
+           <br>
+           
+           is a bare-boned approach of teaching digital marketing for readers, offering explanations to some of its most basic concepts in the simplest way possible before ultimately heading into the more advanced subject matter.
+           
+           What is astonishing about 
+           <br>
+           this book is despite its raw approach to the topic, how relevant the book remains in the year 2022. It talks about everything from the current best SEO practices to effectively using content marketing to gain traction. This book covers every inch of the digital marketing universe in the most comprehensive way possible.
+           <br>
+           The book aims to teach novice marketers how to come up with a digital marketing plan that works for their business. It is well thought out, and most importantly very easy to read. This book is definitely worth a check.
+           <br>
+
+           Suggested Readers
+           
+           Everyone, Small and Business Owners, Digital Marketing Enthusiasts
+       </p>
+       <BR></BR>
+       <a id="n112"  href="https://www.udemy.com/course/chemistry-inquiry-1of4/" class="MyBtn_Here" target="_Abhishek">Buy
+           Now</a>
+   </div>
+   </div>
+
+
+   <div class="pen">
+    <h1>
+        Digital Marketing All - In - One <br>
+        For Dummies Paperback – 1 December 2020
+        by Stephanie Diamond  (Author)
+   </h1>
+   <div>
+       <img id="r129" src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/03/51B1nEGH94L.jpg" alt="" srcset="">
+ 
+       <p class="r5">
+           Written By: Ryan Deiss and Russ Henneberry
+           Release Date: Dec 27, 2016
+           Pages: 328
+           Price: $20.18
+           
+           Many wish to have a magic book with ‘for dummies’ suffixed in its title to have an easy guide on the subject that interests them. Luckily for people with interest in digital marketing, there is already a bestseller book for you in this department.
+           
+           Digital Marketing for Dummies
+           <br>
+           
+           is a bare-boned approach of teaching digital marketing for readers, offering explanations to some of its most basic concepts in the simplest way possible before ultimately heading into the more advanced subject matter.
+           
+           What is astonishing about 
+           <br>
+           this book is despite its raw approach to the topic, how relevant the book remains in the year 2022. It talks about everything from the current best SEO practices to effectively using content marketing to gain traction. This book covers every inch of the digital marketing universe in the most comprehensive way possible.
+           <br>
+           The book aims to teach novice marketers how to come up with a digital marketing plan that works for their business. It is well thought out, and most importantly very easy to read. This book is definitely worth a check.
+           <br>
+
+           Suggested Readers
+           
+           Everyone, Small and Business Owners, Digital Marketing Enthusiasts
+       </p>
+       <BR></BR>
+       <a id="n112"  href="https://www.udemy.com/course/chemistry-inquiry-1of4/" class="MyBtn_Here" target="_Abhishek">Buy
+           Now</a>
+   </div>
+   </div>
+</section>
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination bt">
+      <li class="page-item ">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      
+      <li class="page-item"><a class="page-link" href="./game.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="#">8</a></li>
+      <li class="page-item"><a class="page-link" href="#">9</a></li>
+      <li class="page-item"><a class="page-link" href="#">10</a></li>
+     
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+   
+
+  
+
+  
+
+
+
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Academy 2021 | All Right Reserved !</p>
+    </footer>
+
+
+
+
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
