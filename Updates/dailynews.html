@@ -119,6 +119,140 @@
         background: linear-gradient(to top, #008aff, #00ffe7);
         filter: blur(30px);
     }
+
+    .bt {
+        display: flex;
+        justify-content: center;
+        border-radius: 10px 10px 10px 10px;
+        margin: 20px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text {
+        padding: 40px;
+        background: #eee;
+    }
+
+    .text h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .banner-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .banner {
+        background: linear-gradient(-55deg, #0485ff 20%, #ff0606 29.1%, #d63031 60%, #0213f7 68.1%);
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0 5px 10px #0005;
+        overflow: hidden;
+        width: 900px;
+    }
+
+    .banner-container .banner .shoe {
+        flex: 1 1 250px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .banner-container .banner .shoe img {
+        width: 80%;
+    }
+
+    .banner-container .banner .content {
+        flex: 1 1 250px;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+    .banner-container .banner .content span {
+        color: #eee;
+        font-size: 25px;
+    }
+
+    .banner-container .banner .content h3 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .banner-container .banner .content p {
+        color: #eee;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .banner-container .banner .content .btn {
+        display: block;
+        height: 40px;
+        width: 150px;
+        line-height: 40px;
+        background: #fff;
+        color: #d63031;
+        margin: 5px auto;
+        text-decoration: none;
+    }
+
+    .banner-container .banner .women {
+        position: relative;
+        bottom: -33px;
+        padding: 10px;
+        flex: 1 1 250px;
+    }
+
+    .banner-container .banner .women img {
+        width: 100%;
+    }
+
+    @media (max-width:768px) {
+        .banner-container .banner .women {
+            display: none;
+        }
+    }
+
+    .myBtnHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MyBtn_Here {
+        text-align: center;
+        text-decoration: none;
+        background-image: linear-gradient(45.4deg, rgba(81, 128, 252, 1) 25.9%, rgba(12, 12, 12, 1) 93.1%);
+        color: white;
+        width: 50%;
+        padding: 10px;
+        transition: all 0.4s ease;
+        border-radius: 0%;
+    }
+
+    .MyBtn_Here:hover {
+        background-image: linear-gradient(111.1deg, rgba(0, 40, 70, 1) -4.8%, rgba(255, 115, 115, 1) 82.7%, rgba(255, 175, 123, 1) 97.2%);
+        border-radius: 20px;
+        color: white;
+    }
+
+    .KTM {
+        max-width: 550px;
+        max-height: 1400px;
+    }
 </style>
 
 <body>
@@ -175,7 +309,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="./blogs/corona.html">Hindi</a></li>
                             <li>
-                              <a class="dropdown-item" href="./blogs/ram.html">English</a>
+                                <a class="dropdown-item" href="./blogs/ram.html">English</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -741,9 +875,48 @@
 
     </section>
 
+    <div>
 
 
+        <div class="banner-container">
 
+            <div class="banner">
+                <div class="shoe">
+                    <img src="../images/udemyFreeCourses/Tally/Tally_-_Logo.png"
+                        alt="">
+                </div>
+                <div class="content pm">
+                    <h1>
+                        Right Choice Tally Classes, Sapna Sangeeta Road Indore</h1>
+                    <span>Upto</span>
+                    <h3>20% 0ff</h3>
+                    <!-- <h3>Use Coupon</h3>
+                    <a href="">Use Coupons</a> -->
+                    <p>3 days free demo class</p>
+
+                    <div class="myBtnHolder">
+                        <a href="..//contact.html" class="MyBtn_Here"
+                            target="_Abhishek">Enroll Now</a>
+                    </div>
+
+                    <!-- <a href="#" class="btn">veiw offer</a> -->
+                </div>
+                <div class="women">
+                    <!-- <img src="../images/udemyFreeCourses/Tally/Tally_-_Logo.png" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea quidem quibusdam praesentium repellendus dolores delectus nemo quo voluptas iure laboriosam quod perferendis obcaecati nulla eligendi, non, adipisci, iste doloremque reiciendis. Laudantium illo consequuntur totam eligendi dolorum modi deserunt! Dolorem aut ipsa quod modi. Praesentium obcaecati fugiat reprehenderit nemo ea quibusdam. Facilis voluptatem ut corporis consequatur repudiandae delectus minima, enim nostrum. Vitae magnam mollitia commodi? Quae repellendus sint qui animi fuga nostrum eaque consequuntur sit deleniti expedita cumque excepturi iure modi inventore assumenda corrupti quos, non possimus quaerat magnam fugiat maxime adipisci voluptatum itaque. Enim, facere iure quis nulla perspiciatis obcaecati sequi iusto nostrum eveniet suscipit porro aspernatur dolore distinctio ipsam cumque! Cum eligendi, ipsum illum officiis iure sapiente esse ex adipisci corrupti, consequatur nostrum tempore nobis nisi ea dicta reprehenderit quia neque nemo dolores! Aliquid facere ea esse sapiente atque qui tempora molestias tempore omnis repellendus voluptates ipsa, laudantium enim vitae animi nulla nam harum reiciendis alias! A reiciendis eveniet laudantium necessitatibus itaque ipsa earum enim commodi, nihil aut tempora illo recusandae aperiam, odit officiis hic dolore cumque deleniti, ab consectetur! Vitae sit soluta nemo eveniet alias repudiandae, non dignissimos, nulla expedita itaque sapiente tempora aliquam natus culpa voluptatum commodi ex quod omnis eos optio recusandae aspernatur. Obcaecati neque commodi minus labore aliquid nulla quas beatae! A, ipsam facere cum magnam quam quibusdam sed rerum expedita vero pariatur est vel modi magni officiis quidem atque laudantium quia assumenda recusandae tempora beatae quas error sequi debitis! Aliquam quae sunt doloremque molestiae? Suscipit eligendi recusandae consequatur quis quibusdam nulla accusamus tenetur earum! Iste quasi temporibus deleniti veniam dignissimos reiciendis, animi neque recusandae non illum sint itaque omnis minima odit molestiae id natus nulla, dolorum et. Ab tempora, neque voluptatibus necessitatibus, pariatur quisquam consequatur harum eum dolorem earum quae illum minus culpa?</p>
+    </div> -->
+
+    </div>
+
+
+    <br> <br><br><br><br><br><br>
 
     <!-- Seo Section -->
 
@@ -906,6 +1079,33 @@
         </div>
 
 
+        <br> <br>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination bt">
+                <li class="page-item ">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+
+                <li class="page-item"><a class="page-link" href="./game.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </section>
 
 
